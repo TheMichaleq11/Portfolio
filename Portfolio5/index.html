@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Michał Rosiek — portfolio</title>
+<meta name="description" content="Strony i aplikacje pisane od zera. Portfolio Michała Rosieka.">
+<meta name="theme-color" content="#0c0318">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#0c0318;-webkit-font-smoothing:antialiased}
+a{color:#fdaf94}a:hover{color:#ffffff}
+.hero-bg{position:absolute;inset:0;pointer-events:none;background:
+radial-gradient(6% 38% at 50% 52%, rgba(229,244,253,.95) 0%, rgba(157,223,248,.75) 35%, rgba(58,184,231,0) 100%),
+radial-gradient(26% 20% at 50% 74%, #fbbc9f 0%, #fe9e70 35%, rgba(251,140,92,.65) 62%, rgba(251,140,92,0) 100%),
+radial-gradient(70% 26% at 50% 100%, #f56c5f 0%, rgba(245,108,95,.85) 45%, rgba(212,96,91,0) 100%),
+linear-gradient(180deg,#0c0318 0%,#0a0420 12%,#02082e 24%,#011744 36%,#03367a 48%,#0563a8 58%,#0a82c0 66%,#4698c3 72%,#a2a6bc 78%,#df979f 85%,#e48579 91%,#d4605b 96%,#893741 100%);}
+.stripes{position:absolute;inset:0;pointer-events:none;mix-blend-mode:screen;
+background:repeating-linear-gradient(90deg, rgba(157,223,248,0) 0px, rgba(157,223,248,0) 3px, rgba(157,223,248,.28) 4px, rgba(157,223,248,0) 6px, rgba(157,223,248,0) 9px, rgba(229,244,253,.14) 10px, rgba(157,223,248,0) 12px, rgba(157,223,248,0) 16px);
+-webkit-mask-image:radial-gradient(75% 70% at 50% 58%, #000 35%, transparent 80%);
+mask-image:radial-gradient(75% 70% at 50% 58%, #000 35%, transparent 80%);}
+.orb{background:radial-gradient(circle at 50% 40%, rgba(255,255,255,.7), rgba(253,175,148,.35) 50%, rgba(255,255,255,.05) 75%);box-shadow:0 0 70px rgba(254,158,112,.7), inset 0 0 26px rgba(255,255,255,.45)}
+.side-btn{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22)}
+.glass-pink{background:rgba(251,235,234,.86);border:1px solid rgba(255,255,255,.75);box-shadow:0 30px 60px -30px rgba(137,55,65,.6)}
+.glass-coral{background:linear-gradient(180deg,#f9cfcc 0%,#f47863 100%);border:1px solid rgba(255,255,255,.6);box-shadow:0 30px 60px -30px rgba(137,55,65,.6)}
+.glass-dark{background:linear-gradient(180deg, rgba(157,223,248,.08), rgba(255,255,255,.02));border:1px solid rgba(157,223,248,.16)}
+.thumb-a{background:radial-gradient(90% 90% at 50% 100%, #fdaf94 0%, #f56c5f 28%, #0563a8 66%, #02082e 100%)}
+.thumb-b{background:linear-gradient(180deg,#011744 0%,#0a82c0 55%,#fe9e70 84%,#f47863 100%)}
+.thumb-c{background:repeating-linear-gradient(90deg,rgba(157,223,248,.35) 0 2px,rgba(157,223,248,0) 2px 9px),linear-gradient(180deg,#02082e 0%,#0563a8 65%,#fbbc9f 100%)}
+.thumb-d{background:radial-gradient(80% 90% at 50% 110%, #fbebea 0%, #f6c1c3 30%, #e48579 58%, #893741 100%)}
+.thumb-e{background:linear-gradient(160deg,#0c0318 0%,#03367a 42%,#3ab8e7 70%,#fb8c5c 100%)}
+.thumb-f{background:radial-gradient(70% 80% at 50% 0%, #9ddff8 0%, #0563a8 45%, #0c0318 90%)}
+.contact-bg{position:absolute;inset:0;pointer-events:none;background:
+radial-gradient(28% 26% at 50% 78%, #fbbc9f 0%, #fe9e70 35%, rgba(251,140,92,0) 100%),
+radial-gradient(75% 30% at 50% 100%, #f56c5f 0%, rgba(245,108,95,.85) 45%, rgba(212,96,91,0) 100%),
+linear-gradient(180deg,#0c0318 0%,#011744 25%,#03367a 42%,#0563a8 55%,#0a82c0 64%,#a2a6bc 76%,#e48579 88%,#d4605b 95%,#893741 100%);}
+@media (max-width:760px){
+.stats{margin-top:48px!important}
+.side-btn{display:none!important}
+header nav{display:none!important}
+section{padding-left:20px!important;padding-right:20px!important}
+}
+</style>
+</head>
+<body>
+<div style="font-family: Geist, system-ui, sans-serif; color: #eef0f8; background: #0c0318; min-height: 100vh; overflow: hidden">
+
+<!-- HERO -->
+<section style="position: relative; min-height: 900px; display: flex; flex-direction: column; padding: 24px 32px 0">
+<div class="hero-bg"></div>
+<div class="stripes"></div>
+
+<header style="position: relative; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; max-width: 1320px; width: 100%; margin: 0 auto">
+<a href="#" style="display: flex; align-items: center; gap: 10px; color: #ffffff; text-decoration: none; font-weight: 600; font-size: 16px">
+<svg width="22" height="18" viewBox="0 0 22 18" aria-hidden="true"><g fill="#ffffff"><rect x="0" y="6" width="3" height="6" rx="1.5"></rect><rect x="5" y="2" width="3" height="14" rx="1.5"></rect><rect x="10" y="0" width="3" height="18" rx="1.5"></rect><rect x="15" y="3" width="3" height="12" rx="1.5"></rect><rect x="20" y="7" width="2" height="4" rx="1"></rect></g></svg>
+Michał Rosiek</a>
+<nav aria-label="Główna" style="display: flex; flex-wrap: wrap; gap: 28px; font-family: 'Geist Mono', monospace; font-size: 12px; letter-spacing: .04em">
+<a href="#projekty" style="color: #e5e7f0; text-decoration: none">• Projekty</a>
+<a href="#o-mnie" style="color: #e5e7f0; text-decoration: none">O mnie</a>
+<a href="#proces" style="color: #e5e7f0; text-decoration: none">Jak pracuję</a>
+<a href="#kontakt" style="color: #e5e7f0; text-decoration: none">Kontakt</a>
+</nav>
+<div style="display: flex; gap: 8px; align-items: center">
+<a href="https://github.com/TheMichaleq11" style="font-size: 13px; color: #ffffff; text-decoration: none; padding: 10px 16px; border: 1px solid rgba(255,255,255,.3); border-radius: 999px">GitHub</a>
+<a href="#kontakt" style="font-size: 13px; font-weight: 600; color: #0c0318; background: #ffffff; text-decoration: none; padding: 10px 18px; border-radius: 999px">Napisz do mnie</a>
+</div>
+</header>
+
+<div style="position: relative; flex: 1; max-width: 1320px; width: 100%; margin: 0 auto; padding-top: 72px">
+<div style="text-align: center; display: flex; flex-direction: column; align-items: center; gap: 24px">
+<h1 style="margin: 0; font-family: 'Instrument Serif', serif; font-weight: 400; font-size: clamp(48px, 7.4vw, 108px); line-height: .98; letter-spacing: -.01em; color: #ffffff; max-width: 1000px">Strony i aplikacje<br>pisane <em style="font-style: italic">od zera.</em></h1>
+<p style="margin: 0; max-width: 520px; font-family: 'Geist Mono', monospace; font-size: 13px; line-height: 1.7; color: #e5e7f0">Jestem Michał. Studiuję ekonomię na UJ, a po godzinach buduję rzeczy, których sam potrzebuję — i takie, których potrzebują inni.</p>
+<a href="#projekty" class="orb" aria-label="Zobacz projekty" style="margin-top: 40px; width: 92px; height: 92px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #ffffff; text-decoration: none; font-family: 'Geist Mono', monospace; font-size: 11px; letter-spacing: .08em; border: 1px solid rgba(255,255,255,.5)">Zobacz</a>
+</div>
+
+<div class="stats" style="position: relative; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 32px; margin-top: -150px">
+<div style="display: flex; align-items: center; gap: 28px">
+<a href="#projekty" class="side-btn" aria-label="Poprzedni" style="width: 52px; height: 52px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #ffffff"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M15 6l-6 6 6 6"></path></svg></a>
+<div style="display: flex; flex-direction: column; gap: 22px">
+<div><div style="font-family: 'Instrument Serif', serif; font-size: 40px; line-height: 1; color: #ffffff">6</div><div style="font-family: 'Geist Mono', monospace; font-size: 11px; color: #d6daea; margin-top: 6px">projektów</div></div>
+<div><div style="font-family: 'Instrument Serif', serif; font-size: 40px; line-height: 1; color: #ffffff">2</div><div style="font-family: 'Geist Mono', monospace; font-size: 11px; color: #d6daea; margin-top: 6px">działają na co dzień</div></div>
+</div>
+</div>
+<div style="display: flex; align-items: center; gap: 28px">
+<div style="display: flex; flex-direction: column; gap: 22px; text-align: right">
+<div><div style="font-family: 'Instrument Serif', serif; font-size: 40px; line-height: 1; color: #ffffff">0</div><div style="font-family: 'Geist Mono', monospace; font-size: 11px; color: #d6daea; margin-top: 6px">szablonów</div></div>
+<div><div style="font-family: 'Instrument Serif', serif; font-size: 40px; line-height: 1; color: #ffffff">1</div><div style="font-family: 'Geist Mono', monospace; font-size: 11px; color: #d6daea; margin-top: 6px">wolne miejsce na zlecenie</div></div>
+</div>
+<a href="#projekty" class="side-btn" aria-label="Następny" style="width: 52px; height: 52px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #ffffff"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg></a>
+</div>
+</div>
+</div>
+
+<!-- szklane karty na dole -->
+<div style="position: relative; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; max-width: 1320px; width: 100%; margin: 90px auto 0">
+<div class="glass-pink" style="border-radius: 22px 22px 0 0; padding: 16px; display: flex; flex-direction: column; gap: 12px">
+<div style="font-family: 'Geist Mono', monospace; font-size: 11px; color: #3a1620">• Hermes — poczta</div>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px">
+<div class="thumb-a" style="height: 74px; border-radius: 10px"></div>
+<div class="thumb-e" style="height: 74px; border-radius: 10px"></div>
+<div class="thumb-f" style="height: 74px; border-radius: 10px"></div>
+</div>
+</div>
+<div class="glass-coral" style="border-radius: 22px 22px 0 0; padding: 16px; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; justify-content: space-between; align-items: center">
+<span style="font-family: 'Geist Mono', monospace; font-size: 11px; color: #3a1620">• Inżynier wyścigowy</span>
+<span style="font-size: 11px; background: #ffffff; color: #3a1620; padding: 5px 10px; border-radius: 999px">Dane na żywo</span>
+</div>
+<svg viewBox="0 0 300 74" style="width: 100%; height: 74px" role="img" aria-label="Wykres telemetrii"><polyline points="0,50 20,40 40,46 60,22 80,30 100,14 120,36 140,28 160,44 180,18 200,26 220,10 240,34 260,24 280,40 300,30" fill="none" stroke="#3a1620" stroke-width="1.6"></polyline><line x1="150" y1="4" x2="150" y2="70" stroke="#0563a8" stroke-width="1.5"></line><circle cx="150" cy="28" r="5" fill="#ffffff" stroke="#0563a8" stroke-width="2"></circle></svg>
+</div>
+<div class="glass-pink" style="border-radius: 22px 22px 0 0; padding: 16px; display: flex; flex-direction: column; gap: 12px; background: linear-gradient(180deg, #0a82c0 0%, #f47863 100%)">
+<div style="font-family: 'Geist Mono', monospace; font-size: 11px; color: #ffffff">• Mój USOS — plan tygodnia</div>
+<div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 6px">
+<div style="height: 74px; border-radius: 8px; background: rgba(12,3,24,.35); display: flex; align-items: flex-end; padding: 6px"><div style="height: 40%; width: 100%; border-radius: 4px; background: #fdaf94"></div></div>
+<div style="height: 74px; border-radius: 8px; background: rgba(12,3,24,.35); display: flex; align-items: flex-end; padding: 6px"><div style="height: 75%; width: 100%; border-radius: 4px; background: #9ddff8"></div></div>
+<div style="height: 74px; border-radius: 8px; background: rgba(12,3,24,.35); display: flex; align-items: flex-end; padding: 6px"><div style="height: 55%; width: 100%; border-radius: 4px; background: #fbebea"></div></div>
+<div style="height: 74px; border-radius: 8px; background: rgba(12,3,24,.35); display: flex; align-items: flex-end; padding: 6px"><div style="height: 85%; width: 100%; border-radius: 4px; background: #9ddff8"></div></div>
+<div style="height: 74px; border-radius: 8px; background: rgba(12,3,24,.35); display: flex; align-items: flex-end; padding: 6px"><div style="height: 30%; width: 100%; border-radius: 4px; background: #fdaf94"></div></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- PROJEKTY -->
+<section id="projekty" style="position: relative; padding: 120px 32px 100px; background: #0c0318">
+<div style="max-width: 1320px; margin: 0 auto; display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
+<h2 style="margin: 0; font-family: 'Instrument Serif', serif; font-weight: 400; font-size: clamp(40px, 5vw, 72px); line-height: 1; color: #ffffff">Wybrane <em>projekty</em></h2>
+<p style="margin: 0; max-width: 380px; font-family: 'Geist Mono', monospace; font-size: 12px; line-height: 1.7; color: #c9cde0">Każdy zaczął się od problemu, który mnie wkurzał. Żaden nie powstał z gotowca.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px">
+
+<a href="#" class="glass-dark" style="display: flex; flex-direction: column; gap: 16px; text-decoration: none; color: #ffffff; border-radius: 22px; padding: 14px 14px 22px">
+<div class="thumb-a" style="height: 200px; border-radius: 14px; position: relative"><span style="position: absolute; left: 14px; top: 12px; font-family: 'Geist Mono', monospace; font-size: 11px; color: #ffffff">01</span></div>
+<div style="padding: 0 8px; display: flex; flex-direction: column; gap: 6px"><h3 style="margin: 0; font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 30px; color: #ffffff">Hermes</h3><p style="margin: 0; font-size: 14px; line-height: 1.55; color: #c9cde0">Klient poczty na Windows. Gmail, Outlook i Onet w jednym oknie.</p></div>
+</a>
+
+<a href="https://lanczuj-menu.vercel.app" target="_blank" rel="noopener" class="glass-dark" style="display: flex; flex-direction: column; gap: 16px; text-decoration: none; color: #ffffff; border-radius: 22px; padding: 14px 14px 22px">
+<div class="thumb-b" style="height: 200px; border-radius: 14px; position: relative"><span style="position: absolute; left: 14px; top: 12px; font-family: 'Geist Mono', monospace; font-size: 11px; color: #ffffff">02</span></div>
+<div style="padding: 0 8px; display: flex; flex-direction: column; gap: 6px"><h3 style="margin: 0; font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 30px; color: #ffffff">Menu Lanczuj</h3><p style="margin: 0; font-size: 14px; line-height: 1.55; color: #c9cde0">Menu lokali z programu dopłat do obiadów UJ, zebrane w jednym miejscu.</p></div>
+</a>
+
+<a href="https://andromeda-usos.vercel.app" target="_blank" rel="noopener" class="glass-dark" style="display: flex; flex-direction: column; gap: 16px; text-decoration: none; color: #ffffff; border-radius: 22px; padding: 14px 14px 22px">
+<div class="thumb-c" style="height: 200px; border-radius: 14px; position: relative"><span style="position: absolute; left: 14px; top: 12px; font-family: 'Geist Mono', monospace; font-size: 11px; color: #ffffff">03</span></div>
+<div style="padding: 0 8px; display: flex; flex-direction: column; gap: 6px"><h3 style="margin: 0; font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 30px; color: #ffffff">Mój USOS</h3><p style="margin: 0; font-size: 14px; line-height: 1.55; color: #c9cde0">Czytelniejszy USOS z prawdziwymi danymi z moich studiów.</p></div>
+</a>
+
+<a href="https://koszka.vercel.app" target="_blank" rel="noopener" class="glass-dark" style="display: flex; flex-direction: column; gap: 16px; text-decoration: none; color: #ffffff; border-radius: 22px; padding: 14px 14px 22px">
+<div class="thumb-d" style="height: 200px; border-radius: 14px; position: relative"><span style="position: absolute; left: 14px; top: 12px; font-family: 'Geist Mono', monospace; font-size: 11px; color: #3a1620">04</span></div>
+<div style="padding: 0 8px; display: flex; flex-direction: column; gap: 6px"><h3 style="margin: 0; font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 30px; color: #ffffff">Pasieka Kószka</h3><p style="margin: 0; font-size: 14px; line-height: 1.55; color: #c9cde0">Nowa strona dla znajomego pszczelarza — miód, sklep i historia pasieki.</p></div>
+</a>
+
+<a href="#" class="glass-dark" style="display: flex; flex-direction: column; gap: 16px; text-decoration: none; color: #ffffff; border-radius: 22px; padding: 14px 14px 22px">
+<div class="thumb-e" style="height: 200px; border-radius: 14px; position: relative"><span style="position: absolute; left: 14px; top: 12px; font-family: 'Geist Mono', monospace; font-size: 11px; color: #ffffff">05</span></div>
+<div style="padding: 0 8px; display: flex; flex-direction: column; gap: 6px"><h3 style="margin: 0; font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 30px; color: #ffffff">Inżynier wyścigowy</h3><p style="margin: 0; font-size: 14px; line-height: 1.55; color: #c9cde0">Dashboard z danymi na żywo z F1, który zdalny inżynier widzi przez internet.</p></div>
+</a>
+
+<a href="#" class="glass-dark" style="display: flex; flex-direction: column; gap: 16px; text-decoration: none; color: #ffffff; border-radius: 22px; padding: 14px 14px 22px">
+<div class="thumb-f" style="height: 200px; border-radius: 14px; position: relative"><span style="position: absolute; left: 14px; top: 12px; font-family: 'Geist Mono', monospace; font-size: 11px; color: #0c0318">06</span></div>
+<div style="padding: 0 8px; display: flex; flex-direction: column; gap: 6px"><h3 style="margin: 0; font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 30px; color: #ffffff">Pieśni na TV</h3><p style="margin: 0; font-size: 14px; line-height: 1.55; color: #c9cde0">Teksty pieśni w kościele na zwykłym telewizorze, sterowane z telefonu.</p></div>
+</a>
+
+</div>
+</div>
+</section>
+
+<!-- O MNIE -->
+<section id="o-mnie" style="padding: 100px 32px 120px; background: #0c0318">
+<div style="max-width: 1320px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 64px; align-items: flex-start">
+<div style="flex: 1 1 420px; min-width: 0">
+<div style="font-family: 'Geist Mono', monospace; font-size: 11px; color: #fe9e70; letter-spacing: .08em">• O MNIE</div>
+<h2 style="margin: 16px 0 0; font-family: 'Instrument Serif', serif; font-weight: 400; font-size: clamp(36px, 4.4vw, 60px); line-height: 1.05; color: #ffffff">Ekonomia na studiach,<br><em>kod po godzinach.</em></h2>
+</div>
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 20px; font-size: 16px; line-height: 1.7; color: #c9cde0">
+<p style="margin: 0">Uczę się, jak działają pieniądze i rynki, a w wolnym czasie piszę strony i aplikacje. Lubię, kiedy coś działa szybko, wygląda porządnie i nie trzeba czytać instrukcji, żeby z tego korzystać.</p>
+<p style="margin: 0">Nie składam stron z gotowych klocków. Każdą piszę od pierwszej linijki, więc mogę zrobić dokładnie to, czego potrzebujesz.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px">
+<span style="font-family: 'Geist Mono', monospace; font-size: 12px; padding: 8px 14px; border-radius: 999px; border: 1px solid rgba(157,223,248,.3); color: #e5f4fd">HTML / CSS / JS</span>
+<span style="font-family: 'Geist Mono', monospace; font-size: 12px; padding: 8px 14px; border-radius: 999px; border: 1px solid rgba(157,223,248,.3); color: #e5f4fd">three.js</span>
+<span style="font-family: 'Geist Mono', monospace; font-size: 12px; padding: 8px 14px; border-radius: 999px; border: 1px solid rgba(157,223,248,.3); color: #e5f4fd">Vercel</span>
+<span style="font-family: 'Geist Mono', monospace; font-size: 12px; padding: 8px 14px; border-radius: 999px; border: 1px solid rgba(157,223,248,.3); color: #e5f4fd">GitHub</span>
+<span style="font-family: 'Geist Mono', monospace; font-size: 12px; padding: 8px 14px; border-radius: 999px; border: 1px solid rgba(157,223,248,.3); color: #e5f4fd">Claude</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- PROCES -->
+<section id="proces" style="padding: 0 32px 140px; background: #0c0318">
+<div style="max-width: 1320px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px">
+<div class="glass-dark" style="border-radius: 22px; padding: 28px; display: flex; flex-direction: column; gap: 14px; min-height: 220px">
+<span style="font-family: 'Geist Mono', monospace; font-size: 11px; color: #9ddff8">01</span>
+<h3 style="margin: 0; font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 34px; color: #ffffff">Pomysł</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #c9cde0">Mówisz, co chcesz osiągnąć. Ja dopytuję, aż oboje wiemy, co budujemy.</p>
+</div>
+<div class="glass-dark" style="border-radius: 22px; padding: 28px; display: flex; flex-direction: column; gap: 14px; min-height: 220px">
+<span style="font-family: 'Geist Mono', monospace; font-size: 11px; color: #fdaf94">02</span>
+<h3 style="margin: 0; font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 34px; color: #ffffff">Projekt i kod</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #c9cde0">Pokazuję wersję roboczą wcześnie, żebyś mógł zmienić kierunek, zanim będzie za późno.</p>
+</div>
+<div class="glass-dark" style="border-radius: 22px; padding: 28px; display: flex; flex-direction: column; gap: 14px; min-height: 220px">
+<span style="font-family: 'Geist Mono', monospace; font-size: 11px; color: #f6c1c3">03</span>
+<h3 style="margin: 0; font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 34px; color: #ffffff">Start</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #c9cde0">Strona trafia do sieci, a ja zostaję pod telefonem, gdy trzeba coś poprawić.</p>
+</div>
+</div>
+</section>
+
+<!-- KONTAKT -->
+<section id="kontakt" style="position: relative; padding: 160px 32px 40px; text-align: center">
+<div class="contact-bg"></div>
+<div class="stripes"></div>
+<div style="position: relative; max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 28px">
+<h2 style="margin: 0; font-family: 'Instrument Serif', serif; font-weight: 400; font-size: clamp(44px, 6vw, 88px); line-height: 1; color: #ffffff">Masz <em>pomysł?</em></h2>
+<p style="margin: 0; max-width: 460px; font-family: 'Geist Mono', monospace; font-size: 13px; line-height: 1.7; color: #e5e7f0">Napisz kilka zdań o tym, czego potrzebujesz. Odpowiadam zwykle w ciągu doby.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center">
+<a href="https://github.com/TheMichaleq11" target="_blank" rel="noopener" style="font-size: 14px; font-weight: 600; color: #0c0318; background: #ffffff; text-decoration: none; padding: 14px 24px; border-radius: 999px">Napisz przez GitHub</a>
+</div>
+</div>
+<footer style="position: relative; max-width: 1320px; margin: 260px auto 0; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-family: 'Geist Mono', monospace; font-size: 11px; color: #ffffff">
+<span>© 2026 Michał Rosiek</span>
+<span>Napisane od zera</span>
+</footer>
+</section>
+
+</div>
+</body>
+</html>
